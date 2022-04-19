@@ -207,7 +207,7 @@ LANDING
 }
 
 .landing__image--mask {
-    margin: auto;
+    
     width: 322px;
     height: 450px;
     border-radius: 22px;
@@ -243,5 +243,9 @@ PULSERA
 
 .pulsera {
     background-color: #fecedc;
-    padding: 64px 10px;
+    padding-top: 8vh;
+}
+
+.pulsera__container {
+    display: flex;
 }
