@@ -35,7 +35,9 @@ h2 {
     text-align: center;
 }
 
-
+.btn:hover {
+    
+}
 
 p {
     line-height: 1.5;
@@ -81,8 +83,8 @@ a {
     transition: all 350ms ease;
 }
 
-.link__hover-effect::after {
-    color: #242424;
+.link__hover-effect:hover::after {
+    color: #ff0909;
 }
 
 .link__hover-effect:hover:after {
@@ -319,6 +321,35 @@ PULSERA
     color: #bfbfbf;
 }
 
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.btn {
+    background-color: #f1f3ffff;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-size: 1.25em;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-outline-black {
+    color: #242424;
+    border-color: #f1f3ffff; 
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
 /* 
 
 SERVICES
@@ -430,5 +461,79 @@ CONTACTO
 
 .contacto__photos {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.contacto__photo {
+    padding: 16px 20px;
+}
+
+.contacto__img {
+    width:  400px;
+    height: 350px;
+}
+
+.contacto__image--wrapper {
+    margin: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 16px rgba(75, 75, 75, 1);
+    min-width: 300px;
+    display: flex;
+}
+
+.contacto__info > *:nth-child(1) {
+    flex: 1 1 50%;
+}
+
+.contacto__info > *:nth-child(2) {
+    flex: 1 1 50%;
+}
+
+/* 
+
+FOOTER
+
+*/
+
+footer {
+    background-color: #fecedc;
+}
+
+.footer__row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 0;
+    background-color: #fecedc;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__social--link,
+.footer__copyright,
+.footer__logo--popper {
+    color: #242424;
+}
+
+.footer__social--list {
+    background-color: transparent;
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__social--link,
+.footer__copyright {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    
+}
